@@ -34,3 +34,11 @@ Array.prototype.concat.call(
   )
 )
 // => [0, 1, 10, 2, 3]
+
+//replace array element - immutable
+const index = 1;
+const state = [ 0, 1, 2 ];
+const item = 3;
+return state.slice(0, index)
+  .concat([ item ])
+  .concat(state.slice(index + 1));
